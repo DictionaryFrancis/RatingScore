@@ -1,35 +1,25 @@
-/*
-# Front-end Style Guide
+body{
+    margin: 0px; 
+    background-color: hsl(216, 12%, 8%);
+}
+#container{
+    background-color: hsl(213, 19%, 18%);
+    border: 2px solid red;
+    width: 470px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 18px;
+}
+.star-icon{
+    width: 18px;
+    background-color: hsl(213, 19%, 18%, 0.5);
+    back
+    border-radius: 50%;
+    padding: 10px;
+}
 
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Orange: hsl(25, 97%, 53%)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Light Grey: hsl(217, 12%, 63%)
-- Medium Grey: hsl(216, 12%, 54%)
-- Dark Blue: hsl(213, 19%, 18%)
-- Very Dark Blue: hsl(216, 12%, 8%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 15px
-
-### Font
-
-- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
-- Weights: 400, 700
- font-family: 'Overpass', sans-serif; */ 
+ /*font-family: 'Overpass', sans-serif; */ 
