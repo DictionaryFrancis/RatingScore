@@ -1,25 +1,64 @@
 body{
     margin: 0px; 
     background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
 }
 #container{
     background-color: hsl(213, 19%, 18%);
     border: 2px solid red;
-    width: 470px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin: 100px auto;
+    margin: 120px auto;
     padding: 20px;
     border-radius: 18px;
 }
 .star-icon{
-    width: 18px;
-    background-color: hsl(216, 12%, 54%);
+    width: 15px;
+    background-color: hsl(214, 11%, 24%);
     opacity: 1;
     border-radius: 50%;
-    padding: 10px;
+    padding: 12px;
 }
+h1{
+    font-weight: 400;
+    color: white;
+    font-size: 25px;
+}
+p{
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(216, 12%, 54%);
+}
+.rating-btn{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rating-btn-one,.rating-btn-two,.rating-btn-three,.rating-btn-four,.rating-btn-five{
+    border-radius: 50%;
+    padding: 12px;
+    background-color: hsl(214, 11%, 24%);
+    color: hsl(216, 12%, 54%);
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    margin: auto;
+}
+#submit-btn{
+    background-color:hsl(25, 97%, 53%);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
 
  /*font-family: 'Overpass', sans-serif; */ 
