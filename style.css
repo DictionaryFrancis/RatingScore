@@ -5,7 +5,6 @@ body{
 }
 #container{
     background-color: hsl(213, 19%, 18%);
-    border: 2px solid red;
     width: 300px;
     height: 300px;
     display: flex;
@@ -26,11 +25,13 @@ h1{
     font-weight: 400;
     color: white;
     font-size: 25px;
+    margin-top: 25px;
 }
 p{
-    font-weight: 400;
-    font-size: 14px;
+    ont-weight: 400;
+    font-size: 13px;
     color: hsl(216, 12%, 54%);
+    margin-top: 0px;
 }
 .rating-btn{
     width: 300px;
@@ -40,24 +41,26 @@ p{
 }
 .rating-btn-one,.rating-btn-two,.rating-btn-three,.rating-btn-four,.rating-btn-five{
     border-radius: 50%;
-    padding: 12px;
     background-color: hsl(214, 11%, 24%);
     color: hsl(216, 12%, 54%);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     border: none;
-    margin: auto;
+    margin: 3px 7px;
+    padding: 17px 20px;
+    text-align: center;
 }
 #submit-btn{
-    background-color:hsl(25, 97%, 53%);
+    background-color: rgb(251, 116, 19);
     color: white;
     border-radius: 20px;
     border: none;
     width: 300px;
     height: 40px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 400;
     letter-spacing: 3px;
+    margin-top: 27px;
 }
 
 
