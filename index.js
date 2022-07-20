@@ -1,4 +1,14 @@
-let colorBtn5 = document.querySelector("#Btn5-Elem");
+rating = 0
 
-colorBtn5.addEventListener("click",() => colorBtn5.style.backgroundColor = "hsl(25, 97%, 53%)")
- 
+let getRating = () => {
+    return rating
+}
+let setRating = (picked) => {
+    rating = picked
+}
+
+let submitRating = () => {
+    if (rating ===0) {
+        document.
+    }
+}

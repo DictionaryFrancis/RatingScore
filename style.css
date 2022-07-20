@@ -40,7 +40,7 @@ p{
     flex-direction: row;
     justify-content: center;
 }
-.rating-btn-one,.rating-btn-two,.rating-btn-three,.rating-btn-four,.rating-btn-five{
+.btn{
     border-radius: 50%;
     background-color: hsl(214, 11%, 24%);
     color: hsl(216, 12%, 54%);
@@ -53,12 +53,13 @@ p{
     cursor: pointer;
     font-weight: bold;
 }
-.rating-btn-one:hover,.rating-btn-two:hover,.rating-btn-three:hover,.rating-btn-four:hover,.rating-btn-five:hover{
+.btn:hover{
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
 }
-.rating-btn-one:active,.rating-btn-two:active,.rating-btn-three:active,.rating-btn-four:active,.rating-btn-five:active{
+.btn:active{
     background-color: rgb(251, 116, 19) ;
+    color: hsl(0, 0%, 100%);
 }
 #submit-btn{
     background-color: rgb(251, 116, 19);
