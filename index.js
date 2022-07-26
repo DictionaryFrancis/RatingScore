@@ -1,46 +1,26 @@
-//---Buttons Clicked Color---//
-let btn1Color = document.querySelector("#btn-1")
-let btn2Color = document.querySelector("#btn-2")
-let btn3Color = document.querySelector("#btn-3")
-let btn4Color = document.querySelector("#btn-4")
-let btn5Color = document.querySelector("#btn-5")  
-let count2 = document.querySelector("#btn-2").innerHTML
-let count3 = document.querySelector("#btn-3").innerHTML
-let count4 = document.querySelector("#btn-4").innerHTML
-let count5 = document.querySelector("#btn-5").innerHTML
+//-------FOR------
+let ratingButtons = document.querySelector(".rating-btn")
+let ratingValue
+let buttons = ratingButtons.getElementsByClassName("btn")
+for (let index = 0; index < buttons.length; index++) {
+    buttons[index].addEventListener("click", function () {
+        let clickedButtons = document.getElementsByClassName("clicked")
 
+        if (clickedButtons.length > 0) {
+            clickedButtons[0].classList.remove("clicked")
+        }
 
-btn1Color.addEventListener("click", function(){
-    btn1Color.classList.add("clicked")
-    let counting = document.querySelector("#btn-1").innerHTML
-    console.log(counting)
-})
-btn2Color.addEventListener("click", function(){
-    btn2Color.classList.add("clicked")
-    let counting = document.querySelector("#btn-2").innerHTML
-    console.log(counting)
-})
-btn3Color.addEventListener("click", function(){
-    btn3Color.classList.add("clicked")
-    let counting = " " 
-    counting = count3.value
-})
-btn4Color.addEventListener("click", function(){
-    btn4Color.classList.add("clicked")
-    let counting = " " 
-    counting = count4.value
-})
-btn5Color.addEventListener("click", function(){
-    btn5Color.classList.add("clicked")
-    let counting = " " 
-    counting = count5.value
-})
+        let currentButton = this
+        currentButton.classList.add("clicked")
+        ratingValue = currentButton.textContent
+    })
+}
 
-//-------------------Submit
+// //-------------------Submit
 let submit = document.querySelector("#submit-btn")
 let teste = document.querySelector(".test")
 submit.addEventListener("click",function(){
-    teste.textContent = counting + " out of 5"
+    teste.textContent = ratingValue + " out of 5"
 })
 
 
