@@ -1,4 +1,5 @@
 //-------FOR------
+let submit = document.querySelector("#submit-btn")
 let ratingButtons = document.querySelector(".rating-btn")
 let ratingValue
 let buttons = ratingButtons.getElementsByClassName("btn")
@@ -13,14 +14,25 @@ for (let index = 0; index < buttons.length; index++) {
         let currentButton = this
         currentButton.classList.add("clicked")
         ratingValue = currentButton.textContent
+        submit.disabled = false
     })
 }
 
 // //-------------------Submit
-let submit = document.querySelector("#submit-btn")
-let teste = document.querySelector(".test")
+let container = document.querySelector("#container")
 submit.addEventListener("click",function(){
-    teste.textContent = ratingValue + " out of 5"
+    container.innerHTML = `
+    <img class="" src="illustration.svg" alt="star image">
+
+    <p>You selected ${ratingValue} out of 5</p> 
+
+    <h1>Thank you!</h1>
+
+    <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+    </p>
+    `
 })
 
 
