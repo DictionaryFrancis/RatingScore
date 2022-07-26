@@ -4,8 +4,7 @@ body{
     font-family: 'Overpass', sans-serif;
 }
 #container{
-    background: rgb(37,45,55);
-    background: linear-gradient(40deg, rgba(37,45,55,1) 60%, rgba(67,75,86) 85%);
+    background: radial-gradient(circle at top, hsl(217, 12%, 63%)-422%, hsl(213, 19%, 18%) 50%);
     width: 300px;
     height: 300px;
     display: flex;
@@ -85,4 +84,28 @@ p{
     pointer-events: none;
 }
 
- 
+/*Thank you*/
+ .illustration{
+    width: 130px;
+    padding-bottom: 25px;
+ }
+ #container-thank{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 8px;
+    align-content: center;
+    align-items: center;
+ }
+ .rating-thank{
+    border-radius: 35px;
+    background-color: hsl(214, 11%, 24%);
+    color: rgb(251, 116, 19);
+    padding: 7px 18px;
+    font-size: 13px;
+ }
+ .paragraf-thank{
+    font-size: 13px;
+    padding: 0px 4px 3px;
+ }

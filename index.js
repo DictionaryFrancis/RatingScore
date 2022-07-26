@@ -22,16 +22,18 @@ for (let index = 0; index < buttons.length; index++) {
 let container = document.querySelector("#container")
 submit.addEventListener("click",function(){
     container.innerHTML = `
-    <img class="" src="illustration.svg" alt="star image">
+    <div id="container-thank">
+        <img class="illustration" src="illustration.svg" alt="illustration">
 
-    <p>You selected ${ratingValue} out of 5</p> 
+        <p class="rating-thank">You selected ${ratingValue} out of 5</p> 
 
-    <h1>Thank you!</h1>
+        <h1>Thank you!</h1>
 
-    <p>
-        We appreciate you taking the time to give a rating. If you ever need more support, 
-        don’t hesitate to get in touch!
-    </p>
+        <p class="paragraf-thank">
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!
+        </p>
+    </div>
     `
 })
 
